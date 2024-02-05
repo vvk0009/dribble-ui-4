@@ -70,8 +70,7 @@ nav ul li a{
     justify-content: space-around;
     border: 1px solid black;
     margin-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 20px;
+    
     flex-wrap: wrap;
 }
 .p_2{
@@ -90,6 +89,9 @@ nav ul li a{
     }
     .mobile_nav{
         display: block;
+    }
+    .box{
+        margin: 10px;
     }
 }
 @media (max-width:1178px) {
