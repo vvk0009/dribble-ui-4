@@ -13,16 +13,22 @@ nav{
     margin: 0px 60px;
     height: 10vh;
 }
-nav div{
+nav .left_nav{
     display: flex;
     gap: 30px;
 }
-nav div h1{
+nav .left_nav h1{
     color: rgb(0,97,78);
+    font-size: 27px;
+}
+nav .left_nav h2{
+    font-size: 25px;
 }
 nav ul{
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 10px;
+    width: 30%;
 }
 nav ul li{
     list-style: none;
@@ -33,17 +39,17 @@ nav ul li a{
     text-decoration: none;
 
 }
-.container{
+.containerr{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: -290px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
-.container .img-section img{
+.containerr .img-section img{
     width: 900px;
     height: 90vh;
 }
-.container .text-area button{
+.containerr .text-area button{
     margin-top: 25px;
     height: 40px;
     width: 180px;
@@ -52,12 +58,12 @@ nav ul li a{
     color: white;
     border-radius: 200px;
 }
-.container .text-area h5{
-    margin-left: 170px;
+.containerr .text-area h5{
+    margin-left: 10px;
     margin-top: 300px;
 }
 .box{
-    height: 100px;
+    height: 100px auto;
     width: 90%;
     display: flex;
     align-items: center;
@@ -66,5 +72,44 @@ nav ul li a{
     margin-left: 50px;
     padding-right: 50px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.p_2{
+    display: none;
+}
+.mobile_nav{
+    display: none;
+}
+
+@media (max-width:768px) {
+    nav{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .mobile_nav{
+        display: block;
+    }
+}
+@media (max-width:1178px) {
+    .containerr .text-area h5{
+        display: none;
+    }
+    .p_2{
+        display: block;
+    }
+    .containerr .text-area {
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .p_1{
+        display: none;
+    }
+    .containerr .img-section img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
